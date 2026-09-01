@@ -1,0 +1,43 @@
+5. PurposeCapLedger
+
+Contribution Date
+09/01/2026
+
+Title
+PurposeCapLedger - Purpose Mapping and Cap Authorization
+
+Notes / Description
+Built PurposeCapLedger, a reusable no-funds program ledger where validators map expense lines to purpose categories, code totals each category against its cap, and a designated reviewer acts only on within-cap proposals. Its distinct GenLayer-native mechanism is semantic line-to-purpose mapping -> deterministic vector aggregation and cap test -> reviewer authorization. Correction applied: The validator now canonicalizes the leader's attached expense-to-purpose mapping, derives the purpose mask and mapping digest from it, compares the full payload independently, and rebinds it after consensus before cap state is written. The full selected set was checked against both steward findings: substantive leader payloads must bind every derived digest, mask, and state field, while operational registries must be owner-scoped or safely reclaimable. No web collection. Restriction text, categories, caps, expenses, and source references are frozen public caller declarations. It does not move funds, authenticate restrictions, approve payment, or provide tax, accounting, fiduciary, or legal advice. GenVM lint and strict typecheck pass; 11 direct tests and 1 five-validator GLSim integration test pass. A fresh repository-specific external wallet set was used, with no workspace, other-owner, or cross-repository wallet reuse. The StudioNet workflow finalized successfully in 5 transactions. The deployed source was read back byte-for-byte, the complete deployed schema matched abi.json exactly, and mechanism-specific terminal state was read back. The current release is commit 0c6d66a769643be075ab75fe138dbc48e0da5028; contract source: https://github.com/sanity456/fundpurposefit/blob/0c6d66a769643be075ab75fe138dbc48e0da5028/contracts/purpose_cap_ledger.py. The earlier deployment is superseded, is identified only in the correction manifest, and is not submission evidence.
+
+Release commit
+0c6d66a769643be075ab75fe138dbc48e0da5028
+
+Evidence 1 Type
+GitHub Repository
+
+Evidence 1 URL
+https://github.com/sanity456/fundpurposefit
+
+Evidence 2 Type
+GitHub File
+
+Evidence 2 URL
+https://github.com/sanity456/fundpurposefit/blob/0c6d66a769643be075ab75fe138dbc48e0da5028/deployments/studionet.json
+
+Evidence 3 Type
+GenLayer Studio Contract
+
+Evidence 3 URL
+https://studio.genlayer.com/?import-contract=0x215FBa27157f5367e73225F782d4c599A0583B7c
+
+Evidence 4 Type
+GenLayer Explorer Contract
+
+Evidence 4 URL
+https://explorer-studio.genlayer.com/address/0x215FBa27157f5367e73225F782d4c599A0583B7c
+
+Evidence 5 Type
+Other
+
+Evidence 5 URL
+https://explorer-studio.genlayer.com/tx/0x4bcc3938a081961a48ecdefe092ee2db0530249ca77f054f5fe9404a6f076ac3
