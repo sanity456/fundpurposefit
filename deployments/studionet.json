@@ -1,0 +1,190 @@
+{
+  "contract": {
+    "abi_sha256": "7902fde4973480b67fceff3f3006f89da662ee821f15123bb1acc225d34bc06c",
+    "address": "0x215FBa27157f5367e73225F782d4c599A0583B7c",
+    "deployed_source_sha256": "ff23bddbd988ec92480585bd4e3966b98adc25f044230bd01d822bcade5f816b",
+    "deployment_tx": "0x4bcc3938a081961a48ecdefe092ee2db0530249ca77f054f5fe9404a6f076ac3",
+    "execution_result": "SUCCESS",
+    "schema_method_count": 10,
+    "schema_readback_exact": true,
+    "source_readback_exact": true,
+    "source_sha256": "ff23bddbd988ec92480585bd4e3966b98adc25f044230bd01d822bcade5f816b",
+    "status": "FINALIZED"
+  },
+  "correction_basis": [
+    "leader substantive payload must be independently validated and bound to every derived hash, mask, or state field",
+    "registries and fixed capacity must be owner-scoped or safely reclaimable",
+    "submission evidence must resolve to this exact deployed source and full ABI"
+  ],
+  "network": {
+    "chain_id": 61999,
+    "explorer": "https://explorer-studio.genlayer.com",
+    "name": "studionet",
+    "rpc": "https://studio.genlayer.com/api"
+  },
+  "observed": {
+    "mapping_hash_recomputed_from_attached_assignments": true,
+    "proposal": {
+      "assignments": [
+        {
+          "category_id": "EDU",
+          "expense_id": "E1"
+        }
+      ],
+      "closed_at": "2026-09-01T09:12:36.349044Z",
+      "expenses": [
+        {
+          "amount_units": 400,
+          "description": "Printed learning workbooks for the scheduled class.",
+          "id": "E1"
+        }
+      ],
+      "mapping_sha256": "sha256:d51f3720041fa2a72ba0058cbfe90a789b9917a3f97fb7cc63f9755c7d733d0b",
+      "program_id": "0x9457f60dfd266e3f9831c62bee62257bafad8f6f:COMMUNITY",
+      "proposal_id": "0x051aa4327ad1cb75ddac024b19c30c4503f80f24:P1",
+      "proposer": "0x051aA4327aD1Cb75DDAc024B19C30c4503f80f24",
+      "purpose_statement": "Provide a documented neighborhood learning session with public materials.",
+      "review_note": "Reviewer authorizes this within-cap synthetic proposal record.",
+      "reviewer": "0x31e72dF78fB587E8223130b86AB6FF1d7Fa45455",
+      "schema": "fundpurposefit/proposal/v2",
+      "state": "AUTHORIZED",
+      "submitted_at": "2026-09-01T09:10:52.077655Z",
+      "totals": [
+        {
+          "cap_units": 1000,
+          "category_id": "EDU",
+          "total_units": 400,
+          "within_cap": true
+        },
+        {
+          "cap_units": 500,
+          "category_id": "OPS",
+          "total_units": 0,
+          "within_cap": true
+        }
+      ]
+    }
+  },
+  "owner": "sanity456",
+  "repository": "fundpurposefit",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema": "genlayer-intelligent-contract-correction/v4",
+  "supersedes": {
+    "address": "0x04791BbC23034F45531194D4d5cb2180a6343664",
+    "reason": "Superseded by the full validator-binding and registry-isolation audit",
+    "source_sha256": "47515b16e4c9ce464c538826d0cb99f3d34109f8f421a8070650d10d3558f7c1"
+  },
+  "transactions": {
+    "deploy": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x4bcc3938a081961a48ecdefe092ee2db0530249ca77f054f5fe9404a6f076ac3",
+      "status": "FINALIZED",
+      "tx_hash": "0x4bcc3938a081961a48ecdefe092ee2db0530249ca77f054f5fe9404a6f076ac3",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "map_and_check": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x7813e40f4c95f2de52263246c1a49a6e04a93fcf527bd0e9b634c30f7a89c836",
+      "status": "FINALIZED",
+      "tx_hash": "0x7813e40f4c95f2de52263246c1a49a6e04a93fcf527bd0e9b634c30f7a89c836",
+      "validator_votes": [
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "publish_program": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x44f740f7b643b407d8a6e28d641eb233207ec349d647ac8f31e053e8c7a36bdf",
+      "status": "FINALIZED",
+      "tx_hash": "0x44f740f7b643b407d8a6e28d641eb233207ec349d647ac8f31e053e8c7a36bdf",
+      "validator_votes": [
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "reviewer_decision": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x231d5b565534241c76b92057f701704f310e5c1cd2f88c38b58dbdd9b578b7dd",
+      "status": "FINALIZED",
+      "tx_hash": "0x231d5b565534241c76b92057f701704f310e5c1cd2f88c38b58dbdd9b578b7dd",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "submit_proposal": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xb74bec7f59dd324c82112992eb138baec6e0546d8524843932ec3e320f5c10e0",
+      "status": "FINALIZED",
+      "tx_hash": "0xb74bec7f59dd324c82112992eb138baec6e0546d8524843932ec3e320f5c10e0",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    }
+  },
+  "verification": {
+    "all_executions_succeeded": true,
+    "all_transactions_finalized": true,
+    "deployed_schema_exact": true,
+    "deployed_source_exact": true,
+    "latest_final_state_readback": true,
+    "leader_payload_injection_tests_passed": true,
+    "local_direct_test_count": 11,
+    "local_five_validator_test_count": 1,
+    "post_consensus_boundary_tests_passed": true,
+    "registry_isolation_tests_passed": false,
+    "synthetic_public_fixture": true
+  },
+  "verified_at": "2026-09-01T09:13:17.233168Z",
+  "wallet": {
+    "cross_repository_wallet_reused": false,
+    "external_encrypted_keystores": true,
+    "fresh_per_repository": true,
+    "other_owner_wallet_reused": false,
+    "owner": "sanity456",
+    "prior_address_overlap_count": 0,
+    "private_material_in_repository": false,
+    "repository": "fundpurposefit",
+    "roles": {
+      "deployer": "0x9457f60DFD266e3f9831C62BEe62257baFaD8F6F",
+      "role_a": "0x051aA4327aD1Cb75DDAc024B19C30c4503f80f24",
+      "role_b": "0x31e72dF78fB587E8223130b86AB6FF1d7Fa45455",
+      "role_c": "0x8CECB7BAd17360F47b20E67001F80BF72D4a760c"
+    },
+    "workspace_wallet_used": false
+  }
+}

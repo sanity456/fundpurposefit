@@ -1,0 +1,14 @@
+Correction summary for PurposeCapLedger
+
+We applied the Boxcomplete result-binding finding and the Baggate registry-isolation finding across the full selected twelve-repository set, including this contract.
+
+What changed in this repository:
+The validator now canonicalizes the leader's attached expense-to-purpose mapping, derives the purpose mask and mapping digest from it, compares the full payload independently, and rebinds it after consensus before cap state is written.
+
+Release evidence:
+Current StudioNet address: 0x215FBa27157f5367e73225F782d4c599A0583B7c
+Deployment transaction: 0x4bcc3938a081961a48ecdefe092ee2db0530249ca77f054f5fe9404a6f076ac3
+Source SHA-256: ff23bddbd988ec92480585bd4e3966b98adc25f044230bd01d822bcade5f816b
+Superseded address: 0x04791BbC23034F45531194D4d5cb2180a6343664
+
+The current Explorer deployment was read back after deployment and matched the repository source byte-for-byte. Its complete on-chain schema matched abi.json exactly. All recorded transactions finalized with successful execution, and the contract-specific final state was read back from StudioNet. Submission evidence must use only the current address and the commit-pinned deployment manifest; the superseded address is not active evidence.

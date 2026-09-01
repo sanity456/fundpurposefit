@@ -1,0 +1,171 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "disable_program": {
+      "params": [
+        [
+          "program_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_program": {
+      "params": [
+        [
+          "program_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_proposal": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_proposal_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "map_and_check": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "matches_cap_check": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "expected_state",
+          "string"
+        ],
+        [
+          "expected_mapping_sha256",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "bool"
+    },
+    "publish_program": {
+      "params": [
+        [
+          "program_key",
+          "string"
+        ],
+        [
+          "reviewer",
+          "address"
+        ],
+        [
+          "categories_json",
+          "string"
+        ],
+        [
+          "restriction_text",
+          "string"
+        ],
+        [
+          "source_reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "reviewer_decision": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "approved",
+          "bool"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "submit_proposal": {
+      "params": [
+        [
+          "proposal_key",
+          "string"
+        ],
+        [
+          "program_id",
+          "string"
+        ],
+        [
+          "purpose_statement",
+          "string"
+        ],
+        [
+          "expenses_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "withdraw_proposal": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}
